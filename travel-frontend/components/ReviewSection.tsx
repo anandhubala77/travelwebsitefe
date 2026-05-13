@@ -7,14 +7,14 @@ import RecentReviews from "./RecentReviews";
 
 import API_BASE_URL from "@/app/src/config/api";
 
-
-
-export default function ReviewSection() {
-  type Review = {
+type Review = {
   name: string;
   message: string;
-  rating?: number;
+  rating: number;
 };
+
+export default function ReviewSection() {
+ 
 
 const [reviews, setReviews] = useState<Review[]>([]);
   const [hover, setHover] = useState<number | null>(null);
