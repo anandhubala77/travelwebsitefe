@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 import RecentReviews from "./RecentReviews";
 
-import API_BASE_URL from "@/config/api";
+import API_BASE_URL from "@/app/src/config/api";
 
 
 
