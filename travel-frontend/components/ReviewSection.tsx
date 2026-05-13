@@ -10,7 +10,13 @@ import API_BASE_URL from "@/app/src/config/api";
 
 
 export default function ReviewSection() {
-  const [reviews, setReviews] = useState<any[]>([]);
+  type Review = {
+  name: string;
+  message: string;
+  rating?: number;
+};
+
+const [reviews, setReviews] = useState<Review[]>([]);
   const [hover, setHover] = useState<number | null>(null);
   const [form, setForm] = useState({
     name: "",

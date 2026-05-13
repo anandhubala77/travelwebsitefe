@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Send, MessageSquare } from "lucide-react";
+import { Phone, Mail, Send, MessageSquare } from "lucide-react";
 // 1. We don't need axios if we use Server Actions
 import { submitContactForm } from "../app/actions/contact"; 
 

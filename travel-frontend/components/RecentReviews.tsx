@@ -54,7 +54,7 @@ export default function RecentReviews({ reviews }: { reviews: Review[] }) {
 
                 {/* Review Message */}
                 <p className="text-gray-700 leading-relaxed mb-6 italic">
-                  "{review.message}"
+                  {review.message}
                 </p>
               </div>
 
