@@ -4,7 +4,6 @@ import axios from "axios";
 import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 import RecentReviews from "./RecentReviews";
-
 import API_BASE_URL from "@/app/src/config/api";
 
 type Review = {
@@ -25,24 +24,43 @@ const [reviews, setReviews] = useState<Review[]>([]);
   });
 
   // Fetch reviews on component mount
+  // useEffect(() => {
+  //   const fetchReviews = async () => {
+  //     try {
+  //       const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/reviews`);
+  //       setReviews(res.data);
+  //     } catch (err) {
+  //       console.error("Failed to fetch reviews:", err);
+  //     }
+  //   };
+  //   fetchReviews();
+  // }, []);
   useEffect(() => {
-    const fetchReviews = async () => {
-      try {
-        const res = await axios.get(`${API_BASE_URL}/api/reviews`);
-        setReviews(res.data);
-      } catch (err) {
-        console.error("Failed to fetch reviews:", err);
-      }
-    };
-    fetchReviews();
-  }, []);
+  const fetchReviews = async () => {
+    try {
+      console.log("Fetching from:", process.env.NEXT_PUBLIC_API_URL);
+
+      const res = await axios.get(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/reviews`
+      );
+
+      console.log("Reviews response:", res.data);
+
+      setReviews(res.data);
+    } catch (err) {
+      console.error("Failed to fetch reviews:", err);
+    }
+  };
+
+  fetchReviews();
+}, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (form.rating === 0) return alert("Please select a rating!");
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/reviews`, form);
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/reviews`, form);
       
       // Update local state immediately for smooth UI
       setReviews([response.data, ...reviews]);

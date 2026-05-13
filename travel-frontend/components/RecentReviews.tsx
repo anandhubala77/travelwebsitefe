@@ -17,8 +17,12 @@ export default function RecentReviews({ reviews }: { reviews: Review[] }) {
     <div className="mt-20">
       <div className="flex items-center justify-between mb-10">
         <div>
-          <h3 className="text-3xl font-bold text-gray-900">What Travelers Say</h3>
-          <p className="text-gray-500 mt-2">Real stories from our global community</p>
+          <h3 className="text-3xl font-bold text-gray-900">
+            What Travelers Say
+          </h3>
+          <p className="text-gray-500 mt-2">
+            Real stories from our global community
+          </p>
         </div>
         <div className="hidden md:block h-px flex-grow mx-8 bg-gray-200" />
       </div>
@@ -47,13 +51,15 @@ export default function RecentReviews({ reviews }: { reviews: Review[] }) {
                     <FaStar
                       key={i}
                       size={16}
-                      className={i < review.rating ? "text-yellow-400" : "text-gray-200"}
+                      className={
+                        i < review.rating ? "text-yellow-400" : "text-gray-200"
+                      }
                     />
                   ))}
                 </div>
 
                 {/* Review Message */}
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                <p className="text-gray-700 leading-relaxed mb-6 italic break-words overflow-hidden max-h-[6rem]">
                   {review.message}
                 </p>
               </div>
@@ -64,7 +70,9 @@ export default function RecentReviews({ reviews }: { reviews: Review[] }) {
                   {review.name.charAt(0).toUpperCase()}
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 leading-none">{review.name}</h4>
+                  <h4 className="font-bold text-gray-900 leading-none">
+                    {review.name}
+                  </h4>
                   <p className="text-xs text-gray-400 mt-1 uppercase tracking-wider font-semibold">
                     Verified Traveler
                   </p>
@@ -74,7 +82,9 @@ export default function RecentReviews({ reviews }: { reviews: Review[] }) {
           ))
         ) : (
           <div className="col-span-full py-20 text-center bg-gray-50 rounded-3xl border-2 border-dashed border-gray-200">
-            <p className="text-gray-400">No reviews yet. Be the first to share your experience!</p>
+            <p className="text-gray-400">
+              No reviews yet. Be the first to share your experience!
+            </p>
           </div>
         )}
       </div>
