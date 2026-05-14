@@ -34,7 +34,7 @@ const keralaPackages = [
       "Colonial charm, seaside cafés, art culture, and Chinese fishing nets.",
     fullDescription:
       "Fort Kochi offers a blend of colonial architecture, art galleries, beachside cafés, historic churches, and vibrant culture. Explore Chinese fishing nets, Jew Town, and sunset walks by the sea.",
-    img: "https://images.unsplash.com/photo-1590228867499-56fb08da0e0d?q=80&w=1200&auto=format&fit=crop",
+    img: "https://media.istockphoto.com/id/148423909/photo/a-sunset-over-chinese-fishing-nets-by-a-canoe-in-cochin.webp?a=1&b=1&s=612x612&w=0&k=20&c=k53gxlKU0G2vGWIYD817BT_JUaYdt38dckabJdYCn7U=",
   },
   {
     title: "Wayanad",
