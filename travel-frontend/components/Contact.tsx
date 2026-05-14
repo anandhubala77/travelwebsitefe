@@ -63,7 +63,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             className="space-y-8"
           >
-            <div className="grid sm:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 gap-6">
               {contactInfo.map((info, i) => (
                 <div key={i} className="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-center">
                   <div className="flex justify-center mb-3">{info.icon}</div>
@@ -76,7 +76,7 @@ export default function Contact() {
             <div className="w-full h-[350px] rounded-3xl overflow-hidden shadow-inner grayscale hover:grayscale-0 transition-all duration-700">
               <iframe
                 title="Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.123456789!2d76.28!3d9.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTgnMDAuMCJOIDc2wrAxNic0OC4wIkU!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3928.5710096272505!2d76.32212807475881!3d10.052213872134704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1778737957132!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

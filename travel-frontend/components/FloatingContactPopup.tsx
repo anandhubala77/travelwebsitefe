@@ -81,14 +81,14 @@ export default function FloatingContactPopup() {
                   </h3>
 
                   <p className="text-sm opacity-80">
-                    +91 9876543210
+                    +919605447242
                   </p>
                 </div>
               </a>
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/+919605447242"
                 target="_blank"
                 className="flex items-center gap-4 bg-gray-100 hover:bg-green-500 hover:text-white p-5 rounded-2xl transition duration-300 group text-black"
               >

@@ -10,8 +10,7 @@ export default function Navbar() {
  // Inside your Navbar.js
 const navLinks = [
   { name: "Home", href: "#" }, // Goes to top
-  { name: "Packages", href: "#packages" },
-  { name: "About", href: "#about" },
+  { name: "Explore", href: "#packages" },
   { name: "Contact", href: "#contact" }, // This looks for id="contact"
 ];
 
@@ -22,7 +21,7 @@ const navLinks = [
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-blue-600">
             <Plane className="rotate-45" />
-            <span>Sibigo</span>
+            <span>Siby’s Travel</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -100,11 +99,7 @@ const navLinks = [
                 ))}
               </div>
 
-              <div className="absolute bottom-10 left-6 right-6">
-                <button className="w-full bg-blue-600 text-white py-3 rounded-xl font-medium">
-                  Book Now
-                </button>
-              </div>
+              
             </motion.div>
           </>
         )}
